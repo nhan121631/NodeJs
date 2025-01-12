@@ -4,7 +4,7 @@ const app = express()
 app.get('/', (req, res) => {
     res.send('Hello API')
 })
-
-app.listen(3000, () => {
-    console.log('node start on port 3000')
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+    console.log('node start on port '+ PORT)
 })
